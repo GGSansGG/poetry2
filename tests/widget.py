@@ -1,4 +1,4 @@
-def mask_number(number):
+def mask_number(number: str) -> str:
     """Принимает на вход строку и делает маску"""
     for i in number:
         if (i == "с") or (i == "С"):
