@@ -11,7 +11,8 @@ def mask_number(number: str) -> str:
                 if s.isalpha() == True:
                     w.append(s)
             q = " ".join(w)
-            return q + " " + number[-19:-7] + "** ****" + number[-5:]
+            v = q + " " + number[-19:-7] + "** ****" + number[-5:]
+            return v
 
 
 print(mask_number("Visa Platinum 7000 7922 8960 6361"))
