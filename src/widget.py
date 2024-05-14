@@ -16,6 +16,6 @@ def mask_number(number: str) -> str:
 
 
 def convert_date(date_str):
-    parts = date_str.split('t')[0].split('-')
+    parts = date_str.split("t")[0].split("-")
     result = f"{parts[2]}.{parts[1]}.{parts[0]}"
     return result
