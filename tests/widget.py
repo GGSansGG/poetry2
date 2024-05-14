@@ -14,6 +14,13 @@ def mask_number(number: str) -> str:
             v = q + " " + number[-19:-7] + "** ****" + number[-5:]
             return v
 
+def convert_date(date_str):
+    parts = date_str.split('T')[0].split('-')
+    result = f"{parts[2]}.{parts[1]}.{parts[0]}"
+    return result
+
 
 print(mask_number("Visa Platinum 7000 7922 8960 6361"))
 print(mask_number("Счет 73654108430135874305"))
+
+print(convert_date("2018-07-11T02:26:18.671407"))
